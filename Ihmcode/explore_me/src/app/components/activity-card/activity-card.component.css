@@ -1,0 +1,32 @@
+/* src/app/components/activity-card/activity-card.component.css */
+.activity-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .activity-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .details-btn, .reservation-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .details-btn {
+    background-color: #f5b98e;
+    margin-right: 10px;
+  }
+  
+  .reservation-btn {
+    background-color: #f5d3ce;
+  }
+  

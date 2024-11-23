@@ -1,0 +1,22 @@
+<!-- src/app/components/main-page/main-page.component.html -->
+<app-nav-bar></app-nav-bar> <!-- Navbar at the top -->
+
+<div class="main-page">
+    <app-sidebar></app-sidebar>
+    <div class="content">
+      <h1>Sport et Fitness</h1>
+      <app-activity-list>
+        <app-activity-card
+            *ngFor="let activity of sportActivities"
+            [image]="activity.image"
+            [title]="activity.label"
+            [rate]="activity.rate"
+            [location]="activity.location">
+          </app-activity-card>
+
+      </app-activity-list>
+    </div>
+  </div>
+  
+  
+  

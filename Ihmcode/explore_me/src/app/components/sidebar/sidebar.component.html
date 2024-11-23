@@ -1,0 +1,42 @@
+<!-- src/app/components/sidebar/sidebar.component.html -->
+<div class="sidebar">
+  <div class="profile">
+    <!-- Image dynamique du profil -->
+    <img  alt="Profile" />
+    <h3></h3> <!-- Affichage dynamique du nom d'utilisateur -->
+    <p>Explore l'aventure</p>
+  </div>
+
+  <nav>
+    <ul>
+      <li>
+        <i class="fas fa-palette"></i> <!-- Icon pour Culture et Arts -->
+        Culture et Arts
+      </li>
+      <li>
+        <i class="fas fa-tree"></i> <!-- Icon pour Nature et Découverte -->
+        Nature et Découverte
+      </li>
+      <li>
+        <i class="fas fa-utensils"></i> <!-- Icon pour Restaurants -->
+        <button (click)="navigateTorestau()" class="nav-button">Restaurants</button>
+      </li>
+      <li>
+        <i class="fas fa-landmark"></i> <!-- Icon pour Musées -->
+        Musées
+      </li>
+      <li>
+        <i class="fas fa-briefcase"></i> <!-- Icon pour Espaces de coworking -->
+        Espaces de coworking
+      </li>
+      <li class="active">
+        <i class="fas fa-dumbbell"></i> <!-- Icon pour Sport et Fitness -->
+        <button (click)="navigateTosport()" class="nav-button">Sport et Fitness</button>
+      </li>
+      <li>
+        <i class="fas fa-trophy"></i> <!-- Icon pour Compétition et Jeux -->
+        Compétition et Jeux
+      </li>
+    </ul>
+  </nav>
+</div>

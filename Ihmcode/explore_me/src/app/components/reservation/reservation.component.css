@@ -1,0 +1,49 @@
+/* src/app/components/reservation/reservation.component.css */
+
+.reservation-form {
+    max-width: 400px;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 60px auto;
+    
+
+}
+
+/* src/app/components/reservation/reservation.component.css */
+
+h2 {
+    text-align: center;
+    color: #4B0082; /* Couleur violet foncé, par exemple */
+}
+
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+small {
+    color: red;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+}

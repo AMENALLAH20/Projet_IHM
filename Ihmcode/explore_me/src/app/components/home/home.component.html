@@ -1,0 +1,64 @@
+<div class="hero-section">
+    <div class="overlay"></div>
+  
+    <!-- Header avec Login et Sign Up -->
+    <div class="header">
+      <div class="logo">
+        <h1 class="site-title">Explore-Me</h1>
+      </div>
+      <div class="auth-buttons">
+        <button (click)="redirectToLogin()" class="btn btn-outline-light login-btn">
+          <i class="fas fa-sign-in-alt"></i> Login
+        </button>
+        <button (click)="redirectToSignup()" class="btn btn-warning signup-btn">
+          <i class="fas fa-user-plus"></i> Sign Up
+        </button>
+      </div>
+    </div>
+  
+    <!-- Contenu principal -->
+    <div class="container text-center text-white">
+      <div class="category-buttons my-4">
+        <!-- Boutons pour catégories -->
+        <button class="btn btn-primary mx-2">
+          <i class="fas fa-theater-masks"></i> Théâtres
+        </button>
+        <button (click)="navigateTosport()" class="btn btn-success mx-2">
+          <i class="fas fa-futbol"></i> Sports
+        </button>
+        <button (click)="navigateTorestau()" class="btn btn-danger mx-2">
+          <i class="fas fa-utensils"></i> Restaurants
+        </button>
+      </div>
+      <h2 class="quote">
+        La distraction n'est pas un luxe, mais une nécessité pour l'esprit.
+      </h2>
+      <div class="search-bar">
+        <form class="d-flex flex-column flex-md-row justify-content-center">
+          <div class="form-group">
+            <label for="activity">Activité</label>
+            <input type="text" id="activity" placeholder="Rechercher" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="checkin">Check-In</label>
+            <input type="date" id="checkin" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="checkout">Check-Out</label>
+            <input type="date" id="checkout" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="guests">Invités</label>
+            <select id="guests" class="form-control">
+              <option value="1">1 invité</option>
+              <option value="2">2 invités</option>
+              <option value="3">3 invités</option>
+              <option value="4">4 invités</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Rechercher</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

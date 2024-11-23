@@ -1,0 +1,190 @@
+/* Conteneur principal */
+.signup-container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Section formulaire */
+.form-section {
+    flex: 1;
+    padding: 2rem;
+    max-width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Champs du formulaire */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-signup {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.btn-signup:hover {
+    background-color: #333;
+}
+
+/* Séparateur */
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.divider hr {
+    flex: 1;
+    border: none;
+    height: 1px;
+    background: #ddd;
+}
+
+.divider span {
+    margin: 0 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Boutons des réseaux sociaux */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #eee;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.social-btn.facebook {
+    color: #3b5998;
+}
+
+.social-btn.email {
+    color: #d93025;
+}
+
+.social-btn.apple {
+    color: #000;
+}
+
+/* Lien vers Login */
+.login-link {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.login-link a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Section image */
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px; /* Assure que l'image ne dépasse pas la largeur du formulaire */
+  height: 93vh;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* Bouton Sign Up */
+.btn-signup {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #070707; /* Bleu clair */
+    border: 2px solid #050505; /* Bordure bleue */
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out; /* Effet de transition */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Ombre légère */
+}
+
+.btn-signup:hover {
+    background-color: #0056b3; /* Bleu plus foncé au survol */
+    border-color: #0056b3; /* Bordure plus foncée */
+    transform: translateY(-2px); /* Légère élévation lors du survol */
+}
+
+.btn-signup:active {
+    background-color: #003d7a; /* Très foncé lors du clic */
+    border-color: #003d7a;
+    transform: translateY(1px); /* Légère descente lors du clic */
+}
+
+.btn-signup:disabled {
+    background-color: #ccc; /* Couleur de fond désactivée */
+    border-color: #bbb;
+    cursor: not-allowed; /* Curseur désactivé */
+}
+
+/* Option pour un bouton "avec icône" */
+.btn-signup i {
+    margin-right: 8px; /* Espacement entre l'icône et le texte */
+    font-size: 1.2rem;
+}

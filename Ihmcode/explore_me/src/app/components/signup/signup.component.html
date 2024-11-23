@@ -1,0 +1,63 @@
+<div class="signup-container">
+  <!-- Formulaire de création de compte -->
+  <div class="form-section">
+    <h2>Sign up</h2>
+    <p>Commençons votre passionnante aventure</p>
+
+    <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+      <!-- Nom -->
+      <div class="form-group">
+        <input type="text" formControlName="name" placeholder="Nom" class="form-control" />
+      </div>
+
+      <!-- E-mail -->
+      <div class="form-group">
+        <input type="email" formControlName="email" placeholder="E-mail" class="form-control" />
+      </div>
+
+      <!-- Mot de passe -->
+      <div class="form-group">
+        <input type="password" formControlName="password" placeholder="Mot de passe" class="form-control" />
+      </div>
+
+      <!-- Âge -->
+      <div class="form-group">
+        <input type="number" formControlName="age" placeholder="Âge" class="form-control" />
+      </div>
+
+      <!-- Bouton pour créer un compte -->
+      <button type="submit" class="btn-signup" [disabled]="signUpForm.invalid">Créer votre compte</button>
+    </form>
+
+    <!-- Séparateur avec "or" -->
+    <div class="divider">
+      <hr />
+      <span>or</span>
+      <hr />
+    </div>
+
+    <!-- Boutons pour réseaux sociaux -->
+    <div class="social-buttons">
+      <button class="social-btn facebook">
+        <i class="fab fa-facebook-f"></i>
+      </button>
+      <button class="social-btn email">
+        <i class="fas fa-envelope"></i>
+      </button>
+      <button class="social-btn apple">
+        <i class="fab fa-apple"></i>
+      </button>
+    </div>
+
+    <!-- Lien vers Login -->
+    <p class="login-link">
+      Already have an account?
+      <a routerLink="/login">Log In</a>
+    </p>
+  </div>
+
+  <!-- Image de droite -->
+  <div class="image-section">
+    <img src="/assets/images/123.jpg" alt="Cycling adventure" />
+  </div>
+</div>

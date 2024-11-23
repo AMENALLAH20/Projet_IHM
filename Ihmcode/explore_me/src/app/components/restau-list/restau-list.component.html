@@ -1,0 +1,11 @@
+<!-- src/app/components/activity-list/activity-list.component.html -->
+<div class="activity-list">
+    <app-restau-cards
+      *ngFor="let activity of activities"
+      [image]="activity.image"
+      [title]="activity.title"
+      [rate]="activity.rate"
+      [location]="activity.location">
+    </app-restau-cards>
+  </div>
+  

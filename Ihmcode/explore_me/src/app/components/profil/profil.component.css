@@ -1,0 +1,94 @@
+.layout {
+    display: flex;
+    width: 100%;
+
+  }
+  
+  app-sidebar {
+    width: 250px; /* Largeur fixe pour la barre latérale */
+    background: #333; /* Exemple de couleur pour la sidebar */
+    color: #080808; /* Pour s'assurer que le texte est visible */
+    padding: 1rem;
+  }
+  
+
+  
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+    flex: 1; /* Assurez-vous que le contenu principal prend le reste de l'espace disponible */
+  }
+  
+  .reservations-section,
+  .suggestions-section {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5rem;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .reservations-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .reservation-card {
+    display: flex;
+    gap: 1rem;
+    background: #f7f7f7;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .reservation-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .suggestions-section .suggestion {
+    margin-bottom: 1.5rem;
+  }
+  
+  .suggestions-section .moods {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .mood-btn {
+    font-size: 1.5rem;
+    background: #f0f0f0;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .mood-btn:hover {
+    background: #ffd700;
+  }
+  
+  .calendar input {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  

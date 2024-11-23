@@ -1,0 +1,24 @@
+<app-nav-bar></app-nav-bar> <!-- Navbar at the top -->
+
+<div class="main-page">
+    <app-sidebar></app-sidebar>
+    <div class="content">
+      <h1>Restaurants recommandés</h1>
+      <div class="restaurant-section">
+        <h2>Restaurant Activities</h2>
+        <div class="activity-list">
+          <app-activity-card
+            *ngFor="let activity of restaurantActivities"
+            [image]="activity.image"
+            [title]="activity.label"
+            [rate]="activity.rate"
+            [location]="activity.location">
+          </app-activity-card>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  

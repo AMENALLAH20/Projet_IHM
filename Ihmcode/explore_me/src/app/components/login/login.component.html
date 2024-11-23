@@ -1,0 +1,53 @@
+<div class="login-container">
+  <!-- Formulaire de connexion -->
+  <div class="form-section">
+    <h2>Log In</h2>
+    <p>Content de vous revoir !</p>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <!-- E-mail -->
+      <div class="form-group">
+        <input type="username" formControlName="username" placeholder="username" class="form-control" />
+      </div>
+
+      <!-- Mot de passe -->
+      <div class="form-group">
+        <input type="password" formControlName="password" placeholder="Mot de Passe" class="form-control" />
+      </div>
+
+      <!-- Bouton pour se connecter -->
+      <button type="submit" class="btn-login">Connexion</button>
+    </form>
+
+    <!-- Séparateur avec "or" -->
+    <div class="divider">
+      <hr />
+      <span>or</span>
+      <hr />
+    </div>
+
+    <!-- Boutons pour réseaux sociaux -->
+    <div class="social-buttons">
+      <button class="social-btn facebook">
+        <i class="fab fa-facebook-f"></i>
+      </button>
+      <button class="social-btn email">
+        <i class="fas fa-envelope"></i>
+      </button>
+      <button class="social-btn apple">
+        <i class="fab fa-apple"></i>
+      </button>
+    </div>
+
+    <!-- Lien vers Sign Up -->
+    <p class="signup-link">
+      Pas encore de compte ?
+      <a routerLink="/signup">Sign up</a>
+    </p>
+  </div>
+
+  <!-- Image de droite -->
+  <div class="image-section">
+    <img src="/assets/images/123.jpg" alt="Welcome back" />
+  </div>
+</div>

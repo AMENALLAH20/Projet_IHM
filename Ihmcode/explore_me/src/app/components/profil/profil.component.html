@@ -1,0 +1,74 @@
+<div class="layout">
+    <!-- Navbar -->
+    <app-nav-bar> </app-nav-bar>
+  
+    <app-sidebar></app-sidebar>
+  
+      <!-- Contenu principal -->
+      <main class="main-content">
+        <!-- Section des réservations -->
+        <div class="reservations-section">
+          <h2>Mes Réservations</h2>
+          <div class="filters">
+            <button>All</button>
+            <button>Récents</button>
+            <button>Plus réservés</button>
+            <select>
+              <option value="none">none</option>
+              <option value="type">types</option>
+            </select>
+          </div>
+          <div class="reservations-list">
+            <!-- Carte de réservation -->
+            <div class="reservation-card">
+              <img src="/assets/images/gymbox.jpg" alt="Sport Gym" />
+              <div class="reservation-info">
+                <h3>Sport et Fitness Gym-Box</h3>
+                <p>À 5 km</p>
+              </div>
+            </div>
+            <div class="reservation-card">
+              <img src="/assets/images/restau.jpg" alt="Restaurant" />
+              <div class="reservation-info">
+                <h3>Restaurants La Feuille Verte</h3>
+                <p>À 7 km</p>
+              </div>
+            </div>
+            <div class="reservation-card">
+              <img src="/assets/images/camp.jpg" alt="Nature" />
+              <div class="reservation-info">
+                <h3>Nature et Découverte Camp-Center</h3>
+                <p>À 10 km</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Section des suggestions -->
+        <div class="suggestions-section">
+          <h2>Suggestions</h2>
+          <div class="suggestion">
+            <img src="/assets/images/tour.jpg" alt="Eiffel Tower" />
+            <div class="suggestion-info">
+              <h3>Activité Recommandée</h3>
+              <button class="btn-reserve">Réserver</button>
+            </div>
+          </div>
+          <div class="moods">
+            <h3>Choisir votre mood</h3>
+            <div class="mood-icons">
+              <button class="mood-btn" title="Aventure">🌄</button>
+              <button class="mood-btn" title="Relaxation">💆‍♂️</button>
+              <button class="mood-btn" title="Culture">🎭</button>
+              <button class="mood-btn" title="Sport">🏋️‍♀️</button>
+              <button class="mood-btn" title="Gastronomie">🍽️</button>
+            </div>
+          </div>
+          <div class="calendar">
+            <h3>Chercher par Date</h3>
+            <input type="date" class="form-control" />
+          </div>
+        </div>
+      </main>
+
+  
